@@ -1,4 +1,4 @@
-function Home() {
+function Hero() {
     return (
         <div className="flex justify-center items-center h-100">
             <h1 className="text-blue-500 font-extrabold text-6xl">
@@ -8,4 +8,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Hero
