@@ -1,6 +1,14 @@
+import LeagueDetails from '@/pages/Events/components/LeagueDetails'
+import ActiveEvents from '@/pages/Events/components/ActiveEvents'
+import FinishedEvents from '@/pages/Events/components/FinishedEvents'
+
 function Events() {
     return (
-        <h1>Eventos</h1>
+        <>
+            <LeagueDetails />
+            <ActiveEvents />
+            <FinishedEvents />
+        </>
     )
 }
 
