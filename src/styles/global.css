@@ -7,12 +7,11 @@
   --color-secondary: #7c3aed;
   --color-secondary-light: #a855f7;
 
-  /* Amarillo */
-  --color-accent: #facc15;
-  --color-accent-light: #fde047;
-
   --color-tertiary: #10b981;
   --color-tertiary-light: #34d399;
+
+  --color-accent: #facc15;
+  --color-accent-light: #fde047;
 
   --color-danger: #ef4444;
   --color-danger-light: #f87171;
