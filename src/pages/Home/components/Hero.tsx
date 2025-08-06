@@ -1,10 +1,10 @@
 function Hero() {
     return (
-        <div className="flex justify-center items-center h-100">
-            <h1 className="text-blue-500 font-extrabold text-6xl">
+        <section className="flex justify-center items-center h-screen">
+            <h1 className="text-accent font-extrabold text-6xl">
                 TS Comunity Brawl
             </h1>
-        </div>
+        </section>
     )
 }
 

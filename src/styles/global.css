@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a;
+  --color-primary-light: #1e293b;
+
+  --color-secondary: #7c3aed;
+  --color-secondary-light: #a855f7;
+
+  /* Amarillo */
+  --color-accent: #facc15;
+  --color-accent-light: #fde047;
+
+  --color-tertiary: #10b981;
+  --color-tertiary-light: #34d399;
+
+  --color-danger: #ef4444;
+  --color-danger-light: #f87171;
+
+  --color-title: #ffffff;
+  --color-subtitle: #cbd5e1;
+  --color-muted: #94a3b8;
+}

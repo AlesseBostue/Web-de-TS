@@ -1,7 +1,7 @@
 function Header() {
     return (
-        <header>
-            header
+        <header className="fixed">
+            
         </header>
     )
 }
