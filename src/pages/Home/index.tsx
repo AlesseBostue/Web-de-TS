@@ -1,18 +1,16 @@
 import Hero from '@/pages/Home/components/Hero'
-import IntroGrid from '@/pages/Home/components/IntroGrid'
-import EventsPreview from '@/pages/Home/components/EventsPreview'
+import IntroBento from '@/pages/Home/components/IntroBento'
 import ClubsPreview from '@/pages/Home/components/ClubsPreview'
-import Staffs from '@/pages/Home/components/Staffs'
+import EventsPreview from '@/pages/Home/components/EventsPreview'
 import InviteWidget from '@/pages/Home/components/InviteWidget'
 
 function Home() {
     return (
         <>
             <Hero />
-            <IntroGrid />
-            <EventsPreview />
+            <IntroBento />
             <ClubsPreview />
-            <Staffs />
+            <EventsPreview />
             <InviteWidget />
         </>
     )
