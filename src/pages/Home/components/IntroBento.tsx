@@ -2,7 +2,7 @@ import { SiDiscord } from 'react-icons/si'
 import clubIcon from '@/assets/club.svg'
 import { Link } from 'react-router-dom'
 
-function IntroBento() {
+export default function IntroBento() {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 max-w-5xl mx-auto">
       
@@ -120,5 +120,3 @@ function IntroBento() {
     </section>
   )
 }
-
-export default IntroBento

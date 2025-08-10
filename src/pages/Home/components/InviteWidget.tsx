@@ -1,4 +1,4 @@
-function InviteWidget() {
+export default function InviteWidget() {
   const inviteLink = "https://discord.gg/8nu3ZdDkp7"
 
   return (
@@ -16,5 +16,3 @@ function InviteWidget() {
     </section>
   )
 }
-
-export default InviteWidget

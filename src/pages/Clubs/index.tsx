@@ -1,7 +1,7 @@
 import ClubFilters from '@/pages/Clubs/components/ClubFilters'
 import ClubsGrid from '@/pages/Clubs/components/ClubsGrid'
 
-function Clubs() {
+export default function Clubs() {
     return (
         <>
             <ClubFilters />
@@ -9,5 +9,3 @@ function Clubs() {
         </>
     )
 }
-
-export default Clubs

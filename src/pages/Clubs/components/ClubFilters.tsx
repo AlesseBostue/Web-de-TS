@@ -1,9 +1,7 @@
-function ClubFilters() {
+export default function ClubFilters() {
     return (
         <section>
             club filters
         </section>
     )
 }
-
-export default ClubFilters

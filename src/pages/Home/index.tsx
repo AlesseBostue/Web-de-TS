@@ -4,7 +4,7 @@ import ClubsPreview from '@/pages/Home/components/ClubsPreview'
 import EventsPreview from '@/pages/Home/components/EventsPreview'
 import InviteWidget from '@/pages/Home/components/InviteWidget'
 
-function Home() {
+export default function Home() {
     return (
         <>
             <Hero />
@@ -15,5 +15,3 @@ function Home() {
         </>
     )
 }
-
-export default Home
