@@ -5,7 +5,7 @@ interface ClubCardProps {
   variant?: Variant
 }
 
-function ClubCard({ club, variant = 'compact' }: ClubCardProps) {
+export default function Club({ club, variant = 'compact' }: ClubCardProps) {
   return (
     <article>
       <h3>{club.name}</h3>
@@ -13,5 +13,3 @@ function ClubCard({ club, variant = 'compact' }: ClubCardProps) {
     </article>
   )
 }
-
-export default ClubCard
