@@ -13,9 +13,9 @@ type ButtonProps = {
 
 const base = 'inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2';
 const variants: Record<Variant, string> = {
-    primary: `${base} bg-primary text-text hover:brightness-90`,
-    accent:  `${base} bg-accent text-text hover:brightness-95`,
-    ghost:   `${base} bg-transparent text-text hover:bg-surface/30`,
+    primary: `${base} bg-primary hover:brightness-90`,
+    accent:  `${base} bg-accent hover:brightness-95`,
+    ghost:   `${base} bg-transparent hover:bg-surface/30`,
 }
 
 export default function Button({ children, variant = 'primary', to, onClick, className = '', type = 'button' }: ButtonProps) {

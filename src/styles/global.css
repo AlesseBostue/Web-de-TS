@@ -5,14 +5,15 @@
   --color-surface: #0B0B0D;
   --color-elevated: #111827;
 
-  --color-primary:   #7C5CFF;
-  --color-secondary: #22C1C3;
-  --color-tertiary:  #9AA4B2;
-  --color-accent:    #FF6B35;
+  --color-primary:   #12a258;
+  --color-primary-dark: #0a6d3b;
+  --color-secondary: #f82723;
+  --color-accent:    #fabe33;
+  --color-accent-dark:    #e6552a;
 
   --color-title:    #FFFFFF;
-  --color-subtitle: #D1D5DB;
-  --color-muted:    #9CA3AF;
+  --color-subtitle: #daf7fd;
+  --color-muted:    #bec1c0;
 
   --color-success: #16A34A;
   --color-error:   #FF4D4F;

@@ -1,21 +1,15 @@
-import { createBrowserRouter } from 'react-router'
+import { createBrowserRouter } from 'react-router-dom'
 import Layout from '@/layouts/Layout'
-import Home from '@/pages/Home'
-import Clubs from '@/pages/Clubs'
-import Events from '@/pages/Events'
-import Staffs from '@/pages/Staffs'
-import NotFound from '@/pages/NotFound'
+import { appRoutes } from '@/consts/routes'
 
 export const router = createBrowserRouter([
   {
     path: '/',
     Component: Layout,
-    children: [
-      { index: true, Component: Home },
-      { path: 'clubes', Component: Clubs },
-      { path: 'eventos', Component: Events },
-      { path: 'staffs', Component: Staffs },
-      { path: '*', Component: NotFound }
-    ],
-  },
+    children: appRoutes.map(({ path, Component }, index) => ({
+      path: index === 0 ? undefined : path.replace(/^\//, ''), // el index route no lleva slash
+      index: index === 0,
+      Component
+    }))
+  }
 ])
