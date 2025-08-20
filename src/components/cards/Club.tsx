@@ -1,15 +1,13 @@
-import type { Club, Variant } from '@/types/club'
+import type { Club as   ClubType } from '@/types/brawl'
 
-interface ClubCardProps {
-  club: Club
-  variant?: Variant
+interface ClubProps {
+  club: ClubType
 }
 
-export default function Club({ club, variant = 'compact' }: ClubCardProps) {
+export default function Club({ club }: ClubProps) {
   return (
-    <article>
-      <h3>{club.name}</h3>
-      <p>{variant}</p>
+    <article className="bg-elevated rounded-lg w-full p-4 sm:p-5 md:p-6">
+      {JSON.stringify(club, null, 2)}
     </article>
   )
 }
