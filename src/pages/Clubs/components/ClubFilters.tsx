@@ -7,9 +7,13 @@ interface ClubFiltersProps {
 
 export default function ClubFilters({ filters, setFilters }: ClubFiltersProps) {
   return (
-    <section>
-      {/* Aquí van tus inputs y selects */}
-      club filters
+    <section className='mt-15'>
+      <input
+        className="border border-gray-300 rounded-lg p-2 w-full"
+        type="text"
+        value={filters.name}
+        onChange={(e) => setFilters({ ...filters, name: e.target.value })}
+      />
     </section>
   )
 }
