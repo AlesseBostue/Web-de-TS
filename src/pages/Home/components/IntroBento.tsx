@@ -47,6 +47,7 @@ export default function IntroBento() {
 
         <img
             src={clubIcon}
+            alt="Icono de Club"
             className="absolute -right-4 -bottom-4 size-28 -rotate-6 group-hover:-rotate-12 group-hover:scale-125 group-hover:-translate-y-2 group-hover:-translate-x-2
             transition-transform duration-300 ease-in-out z-0 text-title opacity-60"
         >
