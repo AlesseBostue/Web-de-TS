@@ -11,7 +11,7 @@ type ButtonProps = {
     type?: 'button' | 'submit' | 'reset'
 }
 
-const base = 'cursor-pointer inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2';
+const base = 'cursor-pointer text-black inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2';
 const variants: Record<Variant, string> = {
     primary: `${base} bg-primary hover:brightness-90`,
     accent:  `${base} bg-accent hover:brightness-95`,
