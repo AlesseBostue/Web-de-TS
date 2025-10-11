@@ -26,7 +26,7 @@ export default function Header() {
                 {/* Izquierda */}
                 <div className="flex items-center gap-2">
                     <Link to="/" className="flex items-center gap-2 group">
-                        <img src={logo} alt="Logo" className="w-8 h-8 flex-shrink-0" />
+                        <img src={logo} alt="Logo" className="w-8 h-8 flex-shrink-0" fetchPriority="high" />
                         <span className="font-bold text-sm sm:text-lg group-hover:text-accent whitespace-nowrap">
                             TS Comunity Brawl
                         </span>
