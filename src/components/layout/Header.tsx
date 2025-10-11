@@ -3,12 +3,25 @@ import logo from '@/assets/logo.webp'
 import { appRoutes } from '@/consts/routes'
 import Button from '@/components/ui/Button'
 import MobileMenu from '@/components/layout/MobileMenu'
+import { useState, useEffect } from 'react'
 
 export default function Header() {
     const navLinks = appRoutes.filter(route => route.nav)
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <header className="fixed top-0 w-full px-8 py-6 z-50">
+        <header className={`fixed top-0 w-full px-8 py-6 z-50 ${isScrolled ? 'bg-base-200/90 backdrop-blur shadow-md' : 'bg-transparent'} transition-colors duration-300`}>
             <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-3 items-center">
                 {/* Izquierda */}
                 <div className="flex items-center gap-2">
@@ -35,7 +48,7 @@ export default function Header() {
 
                 {/* Derecha */}
                 <div className="justify-self-end flex items-center gap-4">
-                    <div className="hidden lg:block">
+                    <div className=" lg:block">
                         <Button onClick={() => window.open('https://discord.gg/8nu3ZdDkp7', '_blank')} variant='accent'>
                             Unirse
                         </Button>
