@@ -48,7 +48,7 @@ export default function Header() {
 
                 {/* Derecha */}
                 <div className="justify-self-end flex items-center gap-4">
-                    <div className=" lg:block">
+                    <div className="hidden lg:block">
                         <Button onClick={() => window.open('https://discord.gg/8nu3ZdDkp7', '_blank')} variant='accent'>
                             Unirse
                         </Button>
